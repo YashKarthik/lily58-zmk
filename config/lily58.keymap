@@ -78,28 +78,28 @@
         f7_music_prev_mod: f7_music_prev_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "F7_MUSIC_PREV_MOD";
-            bindings = <&kp F7>, <&kp C_PREV>;
+            bindings = <&kp F7>, <&kp K_PREVIOUS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
         };
 
         f8_music_play_pause_mod: f8_music_play_pause_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "F8_MUSIC_PLAY_PAUSE_MOD";
-            bindings = <&kp F8>, <&kp C_PP>;
+            bindings = <&kp F8>, <&kp K_PLAY_PAUSE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
         };
 
         f9_music_next_mod: f9_music_next_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "F9_MUSIC_NEXT_MOD";
-            bindings = <&kp F9>, <&kp C_NEXT>;
+            bindings = <&kp F9>, <&kp K_NEXT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
         };
 
         f10_audio_vol_mute_mod: f10_audio_vol_mute_mod {
@@ -108,7 +108,7 @@
             bindings = <&kp F10>, <&kp C_MUTE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
         };
 
         f11_audio_vol_dec_mod: f11_audio_vol_dec_mod {
@@ -117,7 +117,7 @@
             bindings = <&kp F11>, <&kp C_VOL_DN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
         };
 
         f12_audio_vol_inc_mod: f12_audio_vol_inc_mod {
@@ -126,7 +126,7 @@
             bindings = <&kp F12>, <&kp C_VOL_UP>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
@@ -147,11 +147,11 @@
         lower_layer {
             display-name = "Lower";
             bindings = <
-&f1_brightness_mod  &f2_brightness_mod &kp F3             &kp F4          &kp F5 &kp F6     &f7_music_prev_mod  &f8_music_play_pause_mod  &f9_music_next_mod &f10_audio_vol_mute_mod            &f11_audio_vol_dec_mod &f12_audio_vol_inc_mod
-&kp GRAVE    &kp EXCL            &kp AT             &kp HASH           &kp DOLLAR      &kp PRCNT                       &kp CARET  &kp AMPS            &kp KP_MULTIPLY           &kp LPAR             &kp RPAR                           &kp TILDE
-&kp K_LOCK   &trans              &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RBRC                        &trans     &kp KP_EQUAL        &kp KP_PLUS               &kp KP_MINUS         &kp UNDERSCORE                     &kp BACKSLASH
-&trans       &bt BT_SEL 0        &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3    &bt BT_SEL 4  &trans    &trans  &trans     &trans              &trans                    &trans               &trans                             &kp PIPE
-                                                    &trans             &trans          &trans        &trans    &trans  &trans     &trans              &bt BT_CLR
+&f1_brightness_mod  &f2_brightness_mod  &kp F3            &kp F4             &kp F5          &kp F6                          &f7_music_prev_mod  &f8_music_play_pause_mod  &f9_music_next_mod  &f10_audio_vol_mute_mod  &f11_audio_vol_dec_mod  &f12_audio_vol_inc_mod
+&kp GRAVE           &kp EXCL            &kp AT            &kp HASH           &kp DOLLAR      &kp PRCNT                       &kp CARET           &kp AMPS                  &kp KP_MULTIPLY     &kp LPAR                 &kp RPAR                &kp TILDE
+&kp K_LOCK          &trans              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RBRC                        &trans              &kp KP_EQUAL              &kp KP_PLUS         &kp KP_MINUS             &kp UNDERSCORE          &kp BACKSLASH
+&trans              &bt BT_SEL 0        &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3    &bt BT_SEL 4  &trans    &trans  &trans              &trans                    &trans              &trans                   &trans                  &kp PIPE
+                                                          &trans             &trans          &trans        &trans    &trans  &trans              &trans                    &bt BT_CLR
             >;
         };
     };
